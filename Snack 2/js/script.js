@@ -27,4 +27,4 @@ team.forEach((element,index) =>{
 const newArrayTeam = team.map(({name,fouls}) => ({name,fouls}));
 // print in console newArray
 console.log(newArrayTeam, typeof newArrayTeam);
-console.log(teams,typeof teams);
+console.log(...teams);
