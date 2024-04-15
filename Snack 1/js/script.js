@@ -4,6 +4,10 @@ const market = [
         price: 1999,
     },
     {
+        name: "Bonvecchio",
+        price: 299,
+    },
+    {
         name: "Pluto",
         price: 999,
     },
@@ -12,24 +16,19 @@ const market = [
         price: 499,
     },
 ];
-let minPrice = 0;
-let minName = "";
+// declaration vavariable
 let string = "";
-market.forEach((element,index) => {
-    if(minPrice > element.price || minPrice == 0){
-        minPrice = element.price;
-        minName = element.name;
-        indice = index;
-    }
-    string += `
-        <li><strong>Modello bici:</strong> ${element.name}</li>
-        <li><strong>Prezzo :</strong> ${element.price}</li><br>
-    `;    
-});
+
+//  save and call function createList
+let stringList = createList(market);
+let index = minPriceSearch(market);
+
+// print list on DOM
 document.getElementById("list").innerHTML =`
 <h2>Elenco biciclette in negozio</h2>
-${string}
-<h3>la bicicletta che costa meno è ${minName} e costa solo ${minPrice} euro.</h3>
+${stringList}
 `;
+// print result on DOM
+document.getElementById("result").innerHTML += `<span>la bici che costa meno nel negozio:<strong> ${market[index].name}</strong> al solo costo di: <strong>${market[index].price},00</strong>  euro</span>`;
 
 
