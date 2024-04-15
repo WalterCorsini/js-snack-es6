@@ -13,17 +13,17 @@ Stampare a schermo la bici con peso minore utilizzando destructuring e template 
 - invoco la funzione createList a cui passo come parametro l'array di oggetti "market"
     - dichiaro una variabile "string"
     - creo un ciclo forEach
-        - concateno alla variabile string un elmento della lista con i valore delle chiavi "name" e "price"
+        - concateno alla variabile string un elemento della lista con i valore delle chiavi "name" e "weight"
     - ritorno la variabile "string";
 - salvo il risultato della funzione nella variabile "stringList"
-- invoco la funzione minPriceSearch a cui passo come parametro l'array di oggetti "market"
-    - dichiaro la variabile "count" che servira a tenere conte dell'indice in cui è situato l'oggetto che costa meno.
+- invoco la funzione minWeightSearch a cui passo come parametro l'array di oggetti "market"
+    - dichiaro la variabile "count" che servira a tenere conte dell'indice in cui è situato l'oggetto che pesa meno.
     - creo un ciclo forEach con i parametri element e index
-        - se la variabile count è maggiore del prezzo corrente o la variabile "count è uguale a 0
+        - se la variabile count è maggiore del peso corrente o la variabile "count è uguale a 0
             - alla varabile count viene associato il valore dell'indice
     -ritorno il valore dell 'indice.
-- salvo nella variabile "index" il valore della funzione minPriceSearch
+- salvo nella variabile "index" il valore della funzione minWeightSearch
 
 ## OUTPUT
 - nell'id del DOM "list" stampo la lista di oggetti dell'array di object
--nell' id del DOM "result" stampo l'oggetto che costa di meno
+-nell' id del DOM "result" stampo l'oggetto che pesa di meno

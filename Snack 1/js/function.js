@@ -8,7 +8,7 @@ function createList(elem){
     elem.forEach((element,index) => {
         string += `
             <li><strong>Modello bici:</strong> ${element.name}</li>
-            <li><strong>Prezzo :</strong> ${element.price},00 euro</li><br>
+            <li><strong>Peso:</strong> ${element.price}</li><br>
         `;
     });
     return string;
@@ -20,10 +20,10 @@ function createList(elem){
  * @param {object} elem
  * @returns {number}
  */
-function minPriceSearch(elem){
+function minWeightSearch(elem){
     let count = 0;
     elem.forEach((element,index) => {
-        if(count > element.price || count == 0){
+        if(count > element.weight || count == 0){
             count = index;
         }
     });
