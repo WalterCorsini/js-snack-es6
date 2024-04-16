@@ -5,6 +5,7 @@ Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e 
 
 ## INPUT
 - creo array di oggetti con persone che abbiano come chiavi "nome","cognome","eta"
+- dichiaro il nuovo array 
 
 ## LOGICA
 - creo un ciclo con il medoto map per ciclare l'array d persone
