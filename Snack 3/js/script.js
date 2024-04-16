@@ -13,13 +13,10 @@ const automobili = [
 
 
 const autoBenzina = automobili.filter((curAuto) => curAuto.alimentazione === "benzina");
-const autoElettrica = automobili.filter((curAuto) => curAuto.alimentazione === "elettrico");
-const autoMetano = automobili.filter((curAuto) => curAuto.alimentazione === "metano");
 const autoDiesel = automobili.filter((curAuto) => curAuto.alimentazione === "diesel");
-const autoGpl = automobili.filter((curAuto) => curAuto.alimentazione === "gpl");
+const autoResto = automobili.filter((curAuto) => curAuto.alimentazione != "benzina" || curAuto.alimentazione !="diesel");
 
 console.log(autoBenzina);
-console.log(autoElettrica);
-console.log(autoMetano);
 console.log(autoDiesel);
-console.log(autoGpl);
+console.log(autoResto);
+
