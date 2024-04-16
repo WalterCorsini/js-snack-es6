@@ -15,6 +15,8 @@ const automobili = [
 // const autoBenzina = automobili.filter((curAuto) => curAuto.alimentazione === "benzina");
 // const autoDiesel = automobili.filter((curAuto) => curAuto.alimentazione === "diesel");
 // const autoResto = automobili.filter((curAuto) => curAuto.alimentazione != "benzina" || curAuto.alimentazione !="diesel");
+// non corretto perche cosi scorriamo l'array tutte le volte per ogni filter piu corretto forEach
+
 
 let autoBenzina=[];
 let autoDiesel=[];
@@ -34,7 +36,7 @@ automobili.forEach((curAuto) => {
             autoResto.push(curAuto);break;
         };
         case "metano":{
-            autoResto.push(curAuto);break;
+            autoResto.push(curAuto);break;   // usare 3 case per pushare in autoResto. non esistono case con condizioni multiple.
         };
     };
 });
