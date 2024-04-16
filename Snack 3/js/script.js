@@ -12,9 +12,26 @@ const automobili = [
   ];
 
 
-const autoBenzina = automobili.filter((curAuto) => curAuto.alimentazione === "benzina");
-const autoDiesel = automobili.filter((curAuto) => curAuto.alimentazione === "diesel");
-const autoResto = automobili.filter((curAuto) => curAuto.alimentazione != "benzina" || curAuto.alimentazione !="diesel");
+// const autoBenzina = automobili.filter((curAuto) => curAuto.alimentazione === "benzina");
+// const autoDiesel = automobili.filter((curAuto) => curAuto.alimentazione === "diesel");
+// const autoResto = automobili.filter((curAuto) => curAuto.alimentazione != "benzina" || curAuto.alimentazione !="diesel");
+
+let autoBenzina=[];
+let autoDiesel=[];
+let autoResto=[];
+automobili.forEach((curAuto) => {
+    switch (curAuto.alimentazione) {
+        case "benzina":{
+            autoBenzina.push(curAuto);
+        };
+        case "diesel":{
+            autoDiesel.push(curAuto);
+        };
+        case "elettrico" || "gpl" || "metano":{
+            autoResto.push(curAuto);
+        };
+    };
+});
 
 console.log(autoBenzina);
 console.log(autoDiesel);
