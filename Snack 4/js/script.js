@@ -15,14 +15,23 @@ const persone = [
         eta: "10",
     },
 ];
-let personeMagg=[];
-let personeMin=[];
-persone.forEach((curElem) => {
+// let personeMagg=[];
+// let personeMin=[];
+// persone.forEach((curElem) => {
+//     if(curElem.eta >= 18){
+//         personeMagg.push(curElem);
+//     } else{
+//         personeMin.push(curElem);
+//     }
+// });
+// console.log("persone che possono guidare",personeMagg);
+// console.log("persone che non possono guidare",personeMin);
+
+let personeMaggOrNot = persone.map((curElem) => {
     if(curElem.eta >= 18){
-        personeMagg.push(curElem);
+        return curElem.nome + " " + curElem.cognome + " si, puo guidare";
     } else{
-        personeMin.push(curElem);
+        return curElem.nome + " " + curElem.cognome + " no,non puo guidare";
     }
 });
-console.log("persone che possono guidare",personeMagg);
-console.log("persone che non possono guidare",personeMin);
+console.log(personeMaggOrNot);
