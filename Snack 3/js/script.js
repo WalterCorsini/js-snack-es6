@@ -22,13 +22,19 @@ let autoResto=[];
 automobili.forEach((curAuto) => {
     switch (curAuto.alimentazione) {
         case "benzina":{
-            autoBenzina.push(curAuto);
+            autoBenzina.push(curAuto);break;
         };
         case "diesel":{
-            autoDiesel.push(curAuto);
+            autoDiesel.push(curAuto);break;
         };
-        case "elettrico" || "gpl" || "metano":{
-            autoResto.push(curAuto);
+        case "elettrico":{
+            autoResto.push(curAuto);break;
+        };
+        case "gpl":{
+            autoResto.push(curAuto);break;
+        };
+        case "metano":{
+            autoResto.push(curAuto);break;
         };
     };
 });
