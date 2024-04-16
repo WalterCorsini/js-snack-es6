@@ -9,6 +9,9 @@ Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
 
 ## LOGIC
 - utilizzando filter inserisco nei nuovi array le auto a seconda del la lora alimentazione
+    se benzina un array con solo auto benzina
+    se diesel un array con solo auto diesel
+    altrimenti un array con le auto di diversa alimentazione da benzina o diesel
 
 ## OUTPUT
 - stampo in console gli array creati
