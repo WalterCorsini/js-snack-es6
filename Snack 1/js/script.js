@@ -1,19 +1,19 @@
 const market = [
     {
         name: "Paperino",
-        weight: 1999,
+        weight: 1999
     },
     {
         name: "Bonvecchio",
-        weight: 299,
+        weight: 299
     },
     {
         name: "Pluto",
-        weight: 999,
+        weight: 999
     },
     {
         name: "Pippo",
-        weight: 499,
+        weight: 499
     },
 ];
 
