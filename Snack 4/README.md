@@ -5,14 +5,15 @@ Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e 
 
 ## INPUT
 - creo array di oggetti con persone che abbiano come chiavi "nome","cognome","eta"
-- dichiaro il nuovo array 
+- dichiaro due nuovi array "personeMagg" e "personeMin" 
 
 ## LOGICA
-- creo un ciclo con il medoto map per ciclare l'array d persone
+- creo un ciclo con il metodo forEacg per ciclare l'array d persone
 - creo un if
     -se eta della persona corrente è maggiore uguale a 18
-        -pusho nel nuovo array una chiave con "si puo guidare"
+        -pusho nel nuovo array "personeMagg"
     altrimenti
-        -"no non puo guidare"
+        -"pusho nel nuovo array "personeMin"
 ## OUTPUT
-- stampo in console il nuovo array con la nuova chiave.
+- stampo in console array PersoneMagg con messaggio  puo guidare
+- stampo in console array PersoneMagg con messaggio  non puo guidare
