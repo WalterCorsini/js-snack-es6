@@ -23,6 +23,6 @@ team.forEach((element,index) =>{
     teams.push("nome squadra: "+ team[index].name,"falli: "+ team[index].fouls);
 });
 //create new array with name and fouls key
-const newArrayTeam = team.map(({name,fouls}) => {(name,fouls)});
+const newArrayTeam = team.map((name,fouls) => (name,fouls));
 // print in console newArray
 console.log(teams);
